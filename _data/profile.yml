@@ -3,7 +3,7 @@ secondary_name: "杜泓洋"
 navbar_name: "Hongyang Du"
 
 positions:
-- logo: /assets/images/badges/brown_icon.png  # Logo is optional
+- logo: assets/images/badges/brown_icon.png  # Logo is optional 
   name: Master's Student
 
 
