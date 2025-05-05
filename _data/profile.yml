@@ -32,7 +32,7 @@ short_bio: >-
     and random quirky math problem. 
   </p>
   <p>
-    Outside of research, I am an amateur powerlifter and a professional drummer, 
+    Outside of research, I am an amateur powerlifter and a pro drummer, 
     I am a bipolar Jazz Cat and Prog Metalhead — think <em>Chick Corea</em> meets <em>Animals as Leaders</em>.
   </p>
 
@@ -44,7 +44,7 @@ short_bio: >-
 
 portrait_url: /assets/images/photos/portrait.jpg
 portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+  That's me at the Polyphia concert holding Clay Aeschliman's setlist 😈.
 
 education:
 - name: Brown University
@@ -56,7 +56,7 @@ education:
 - name: University of Maryland, College Park
   logo: /assets/images/badges/UMD_icon.png
   position: B.S. in Computer Science and Mathematics
-  date: Auguste. 2021 - May. 2025
+  date: Aug. 2021 - May. 2025
 
 # experience:
 # - name: Peking University
