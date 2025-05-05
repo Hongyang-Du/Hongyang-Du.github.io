@@ -1,50 +1,63 @@
-primary_name: "Your Name"
-secondary_name: ""
-navbar_name: "Your Name"
+primary_name: "Hongyang Du"
+secondary_name: "杜泓洋"
+navbar_name: "Hongyang Du"
 
 positions:
-- logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
-  name: Position 1 with logo
-- name: Position 2 without logo
+- logo: /assets/images/badges/brown_icon.png  # Logo is optional
+  name: Master's Student
 
 
-email: "your@email.com"
+
+email: "hongyang_du@brown.edu"
 # cv_link: link-to-your-cv-file
-gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
-github: your_github_id
-twitter: your_twitter_id  # Do not include the '@' symbol
+gscholar: AXHYhOcAAAAJ&hl  # This is an example, replace it with your own Google Scholar ID 
+github: SmashedPython
+twitter: MultiMa44366675  # Do not include the '@' symbol
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
 #   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
-# linkedin: your-linked-in-id
-# orcid: 0000-0000-0000-0000
+linkedin: hongyangdu
+orcid: 0009-0003-6652-419X
 
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
+    Hi, I’m <strong>Hongyang Du (杜泓洋)</strong> — an incoming Sc.M. Computer Science student at 
+    <strong>Brown University</strong>, with a strong foundation in 
+    <strong>AI</strong>, <strong>machine learning</strong>, and <strong>multimodal systems</strong>. 
+    I recently completed my undergraduate studies in <strong>Computer Science</strong> and <strong>Mathematics</strong> 
+    at the <strong>University of Maryland</strong>.
   </p>
+
   <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
+    My academic interests include <strong>machine learning</strong>, <strong>computer vision</strong>, 
+    and solving the occasional quirky math problem. 
+    Outside of research, I’m a passionate <strong>powerlifter</strong> and a <strong>professional drummer</strong>, 
+    with a love for both <em>jazz fusion</em> and <em>progressive metal</em> — 
+    think <em>Chick Corea's Elektric Band</em> meets <em>Animals as Leaders</em>.
   </p>
+
+  <p>
+    Also, I live with a cat named <strong>Dingzhen</strong>, who keeps me grounded.
+  </p>
+  
+
 
 portrait_url: /assets/images/photos/portrait.jpg
 portrait_caption: >-
   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
+- name: Brown University
+  logo: /assets/images/badges/brown_icon.png
   position: >- 
-    Department of Electrical Engineering and Computer Science <br/>
-    Ph.D. Student
-  date: Sep. 2024 - present
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
+    Department of Computer Science <br/>
+    Mater's Student
+  date: Sep. 2025 - present
+- name: University of Maryland, College Park
+  logo: /assets/images/badges/UMD_icon.png
+  position: B.S. in Computer Science and Mathematics
+  date: Auguste. 2021 - May. 2025
 
 # experience:
 # - name: Peking University
@@ -53,9 +66,8 @@ education:
 #   date: Sep. 2019 - Jul. 2021
 
 awards:
-- name: Award Name 2
+- name: Robert Ma Scholarship Recipent
   date: 2024
-- name: Award Name 1 
+- name: Break Thhrough Tech Scholarship Recipent
   date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+
