@@ -56,5 +56,29 @@
     </script>
     <script src="{{ '/assets/js/common.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/bubble_visual_hash.js' | relative_url }}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const grid = document.querySelector('[data-masonry]');
+            if (!grid) return;
+    
+            const msnry = new Masonry(grid, {
+                itemSelector: '.col-md-3', // 改成你的 col 样式，如果是 col-4 就改成 '.col-4'
+                percentPosition: true
+            });
+    
+            const videos = grid.querySelectorAll('video');
+            let loadedCount = 0;
+    
+            videos.forEach(video => {
+                video.addEventListener('loadeddata', () => {
+                    loadedCount++;
+                    if (loadedCount === videos.length) {
+                        msnry.layout();
+                    }
+                });
+            });
+        });
+    </script>
+    
 </body>
 </html>
