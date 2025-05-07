@@ -75,19 +75,15 @@ video.w-100 {
   }
   
 
-  /* 手机端：横滑 gallery */
-  @media (max-width: 768px) {
-    .video-row {
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      scroll-snap-type: x mandatory;
-      padding-bottom: 0.5rem;
-    }
+/* 默认显示 */
+.desktop-only {
+    display: block;
+  }
   
-    .video-card {
-      flex: 0 0 80%; /* 每屏大约显示 1 个视频，滑动展示 */
-      scroll-snap-align: start;
+  /* 手机端隐藏 */
+  @media (max-width: 768px) {
+    .desktop-only {
+      display: none !important;
     }
   }
   
