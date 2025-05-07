@@ -6,9 +6,8 @@ body {
 }
 .secondary-name {
     font-size: 1.5rem;             /* 更小字号 */
-    font-style: italic;            /* 斜体 */
-    font-family: "STKaiti", "KaiTi", "楷体", "FangSong", "仿宋", "Noto Serif SC", serif;
-    color: #FF69B4;                   /* 柔和灰色，可改成你想要的色值 */
+    font-family: 'Ma Shan Zheng', "STKaiti", "KaiTi", "楷体", "FangSong", "仿宋", "Noto Serif SC", serif;
+    color: #FF69B4;                /* 粉色 */            
   }
 
 h1, h2, h3, h4, h5, h6,
