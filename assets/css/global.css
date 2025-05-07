@@ -71,6 +71,41 @@ video.w-100 {
     max-width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 0.5rem;
+
+  }
+  
+
+  .video-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  /* 每个 video 卡片 */
+  .video-card {
+    flex: 0 0 calc(25% - 1rem); /* 默认每排 4 个 */
+    min-width: 275px;
+  }
+  
+  /* Video 本身样式继续用你的 w-100 */
+  .video-card video {
+    width: 100%;
+    border-radius: 0px;
+  }
+  
+  /* 手机端：横滑 gallery */
+  @media (max-width: 768px) {
+    .video-row {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 0.5rem;
+    }
+  
+    .video-card {
+      flex: 0 0 80%; /* 每屏大约显示 1 个视频，滑动展示 */
+      scroll-snap-align: start;
+    }
   }
   
