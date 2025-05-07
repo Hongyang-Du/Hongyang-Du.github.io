@@ -5,11 +5,12 @@ body {
     padding-top: 5.0rem;
 }
 .secondary-name {
-    font-size: 0.85rem;
-    font-style: italic;
-    color: #555;
-    font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "STHeiti", sans-serif;
-}
+    font-size: 0.75rem;             /* 更小字号 */
+    font-style: italic;            /* 斜体 */
+    font-family: "STKaiti", "KaiTi", "楷体", "FangSong", "仿宋", "Noto Serif SC", serif;
+    color: #677;                   /* 柔和灰色，可改成你想要的色值 */
+  }
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 700;
