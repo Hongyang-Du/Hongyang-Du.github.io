@@ -74,16 +74,3 @@ video.w-100 {
 
   }
   
-
-/* 默认显示 */
-.desktop-only {
-    display: block;
-  }
-  
-  /* 手机端隐藏 */
-  @media (max-width: 768px) {
-    .desktop-only {
-      display: none !important;
-    }
-  }
-  
