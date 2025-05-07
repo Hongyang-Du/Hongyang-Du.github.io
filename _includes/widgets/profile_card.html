@@ -19,7 +19,11 @@
 
                         <div class="d-flex">
                             <div class="h1 font-weight-normal">
-                                {{ site.data.profile.primary_name }} <small><code>{{ site.data.profile.secondary_name }}</code></small> 
+                                {{ site.data.profile.primary_name }} <small>
+                                    <span style="color:#FF69B4; font-family:'Ma Shan Zheng', cursive; font-style:italic;">
+                                      {{ site.data.profile.secondary_name }}
+                                    </span>
+                                  </small>
                             </div>
                             {% if site.data.profile.portrait_url %}
                             <div class="ml-auto d-md-none">
