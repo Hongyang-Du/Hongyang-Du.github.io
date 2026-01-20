@@ -21,13 +21,18 @@ orcid: 0009-0003-6652-419X
 
 short_bio_text_justify: false
 short_bio: >-
+
   <p>
-      Hi, I am <strong><code>Hongyang Du</code></strong> — a Sc.M. Computer Science student at 
-      <strong><code>Brown University</code></strong>. I recently completed my undergraduate studies in Computer Science and Mathematics 
-      at the <strong><code>University of Maryland, College Park</code></strong>. My academic interests include <strong><code>Vision Language Model</code></strong>, <strong><code>Self Supervised Learning</code></strong>, <strong><code>3D Vision</code></strong>,
+    Hi, I am <strong><code>Hongyang Du</code></strong>  — a Sc.M. student in Computer Science at 
+    <strong><code>Brown University</code></strong>. Currently, I am advised by 
+    <a href="https://randallbalestriero.github.io/">Randall Balestriero</a> at Brown and 
+    collaborate with <a href="https://yuewang.xyz/">Yue Wang</a> at the 
+    <a href="https://psi-lab.ai/">USC Physical SuperIntelligence Lab</a>. 
+    I previously obtained my B.S. in Computer Science and Mathematics from the 
+    <strong><code>University of Maryland, College Park</code></strong>. 
+    My academic interests lie in <strong><code>Vision Language Model</code></strong>, <strong><code>Self Supervised Learning</code></strong>, <strong><code>3D Vision</code></strong>,
       and random quirky math problems. 
   </p>
-
   <p>
       Outside of research, I am an amateur powerlifter 💪 and a pro drummer 🥁; I am a Jazz cat and prog metalhead — think <em>Chick Corea</em> meets <em>Animals as Leaders</em>. Also, I live with a cat named <strong><code>Dingzhen(丁真)🐱</code></strong>, who keeps me grounded.
   </p>
