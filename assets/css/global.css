@@ -63,6 +63,31 @@ div.lazy {
     font-size: 100%;
 }
 
+.badge-publication-oral {
+    background-color: #6f42c1;
+    color: #fff;
+}
+
+.badge-publication-poster {
+    background-color: #2e8b57;
+    color: #fff;
+}
+
+.badge-publication-spotlight {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.badge-publication-lavender {
+    background-color: #b7a9d6;
+    color: #fff;
+}
+
+.badge-publication-violet {
+    background-color: #8b7aa8;
+    color: #fff;
+}
+
 .email-text {
     font-family: Courier, monospace;
 }
