@@ -1,0 +1,302 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3.5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-5pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      #3 & #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSimpleHeading}[2]{
+  \vspace{-5pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      {#1} & {#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-10pt}}
+
+% Line 1: title; line 2: authors + venue; line 3: links (no year column)
+\newcommand{\resumePublicationEntry}[4]{%
+  \vspace{-5pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{@{}p{0.97\textwidth}@{}}
+    \raggedright\textbf{#1} \\
+    \raggedright\small
+      #2\ $\cdot$\ \textbf{#3} \\
+    \raggedright\small
+      #4 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.1in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep= 0.5pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Hongyang Du} \\ 
+    \small 11 East Manning St, Providence, RI $|$ 
+    \small 240-413-5747 $|$ 
+    \small hongyangdu182@gmail.com $|$ 
+    \href{https://hongyang-du.github.io/}{Website}
+    $|$ \href{https://www.linkedin.com/in/hongyangdu}{LinkedIn}
+    $|$ 
+    \href{https://github.com/SmashedPython}{Github}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Brown University}{Aug 2025 -- May 2027}
+      {M.S. Computer Science (AI/ML Track)}{GPA 4.0/4.0}
+    \resumeSubheading
+      {University of Maryland, College Park}{Aug 2021 -- May 2025}
+      {B.S. Computer Science (Honors), Minor in Mathematics} {GPA 3.8/4.0}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+ \resumeSubHeadingListStart
+ \resumeSimpleHeading
+      {\textbf{iFlytek}-Machine Learning Engineer Intern \textbar{} Agriculture MLLM Team}{June 2024 -- Aug 2024}
+    \resumeItemListStart
+      \resumeItem{
+        Pretrained a 2B Chinese LLM from scratch based on the LLaMA2 architecture (e.g., RoPE positional encoding, RMSNorm, SwiGLU). Employed SentencePiece Unigram tokenizer to enhance Chinese linguistic modeling.
+      }
+      \resumeItem{
+      Combined ResNet hierarchical classification and YOLOv10 disease-spot detection to classify over 1,000 crop diseases and pests. Constructed RAG-enhanced prompts using visual clues and a knowledge graph.
+      }
+      \resumeItem{
+        Finetuned the model using LoRA and reinforcement learning for domain-specific adaptation. Build a Chinese-centric pretraining pipeline with support for FSDP, gradient checkpointing, and customized preprocessing for Chinese text.
+      }     
+    \resumeItemListEnd
+
+        
+  \resumeSubHeadingListEnd
+ 
+
+%-----------Project-----------
+\section{Selected Publications}
+  \resumeSubHeadingListStart
+  \resumeSubheading 
+      {Self-Evolving Vision Language Models From Zero Data}{March 2025 -- June 2026}{\href{https://arxiv.org/abs/2603.09206}{\textbf{Preprint}}}{}
+      \resumeItemListStart
+          \resumeItem{Proposed a novel training paradigm that eliminates the need for human-annotated data ("zero data") by designing an innovative three-role collaborative pipeline: Proposer, Coder, and Solver}
+          \resumeItem{Empowered the model to autonomously construct visually complex scenes via code generation; implemented Group Relative Policy Optimization (GRPO) with role-specific reward mechanisms for sequential, closed-loop training.}
+          \resumeItem{Drive a comprehensive performance leap across base models (e.g., Qwen3-VL, Mimo-VL) with significant gains in multimodal understanding, mathematical reasoning, and coding capabilities.}
+
+      \resumeItemListEnd
+
+  \resumeSubheading 
+      {3D Consistent Video Diffusion Model}{June 2025 -- Feb 2026}{\href{https://hongyang-du.github.io/VideoGPA-Website/}{\textbf{Preprint}}}{}
+      \resumeItemListStart
+          \resumeItem{Developed a novel self-supervised framework that leverages a Geometry Foundation Model to distill 3D structural priors, addressing the long-standing challenge of temporal inconsistency and spatial drift in Video Diffusion Models.}
+          \resumeItem{Introduced a training-free pipeline to automatically construct dense preference signals; by applying Direct Preference Optimization (DPO), the model effectively aligns video generation with physical geometric laws}
+          \resumeItem{Significantly outperformed SOTA baselines in 3D consistency and motion coherence, achieving superior physical plausibility on complex real-world benchmarks with minimal data requirements.}
+
+      \resumeItemListEnd
+  \resumeSubheading 
+      {Vision Language Models Understanding and Hallucination}{Jan 2025 -- Aug 2025}{\href{https://wuxiyang1996.github.io/videohallu_page/}{\textbf{NeurIPS 2025 [Poster]}}, 
+      \href{https://openaccess.thecvf.com/content/CVPR2025W/TMM-OpenWorld/html/Li_A_Survey_of_State_of_the_Art_Large_Vision_Language_CVPRW_2025_paper.html}{\textbf{CVPR 2025 Workshop [Oral]}} }{}
+      \resumeItemListStart
+        \resumeItem{Designed VideoHallu dataset for hallucination detection in synthetic video understanding; proposed 2 novel metrics (temporal consistency, semantic mismatch) to quantify alignment between captions and dynamic video scenes.
+        }
+        \resumeItem{Implemented robust hallucination detection framework integrating frame-level caption matching, embedding similarity (CLIP/BLIP), and cross-frame alignment; enhanced via GRPO post-training with curriculum learning on video QA datasets incorporating counterintuitive commonsense and physics reasoning.
+        }
+        \resumeItem{Conducted a systematic survey of cutting-edge vision-language models (e.g., GPT-4V, Gemini, Qwen-VL), detailing their model architectures, instruction alignment mechanisms, and evaluation protocols.}
+      \resumeItemListEnd
+      
+  \resumeSubheading 
+      {Implicit Neural Representation for Video Compression}{May 2024 -- May 2025}
+      {
+      \href{https://arxiv.org/abs/2506.24127}{\textbf{WACV 2026}}
+      }{}
+      \resumeItemListStart
+        \resumeItem{Conducted empirical study of video compression methods based on INRs. Developed a unified benchmarking platform to evaluate models across metrics PSNR, MS-SSIM, bitrate, training time, and decoding speed on HD datasets.}
+        \resumeItem{Proposed a novel architecture RNeRV, which introduced a Weight Token Masking mechanism and HyperNetwork decoupling to achieve flexible bitrate control and efficient model deployment. Demonstrated +1.27\% average improvement in visual quality under equal training budgets and enhanced real-time inference throughput.
+        }
+        \resumeItem{Built the XINC (eXplainable INR Compression) tool to visualize neuron-level activation and contribution maps across layers and time steps, improving interpretability and facilitating model optimization for video streaming.
+        }
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Computational Geometry Algorithms and Visualization Tools}{Sep 2023 -- May 2024}
+      {\href{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2024.92}{\textbf{SoCG 2024}}
+      }{}
+      \resumeItemListStart
+        \resumeItem{Explored Hilbert Metric Space data structures and machine learning algorithms, contributing to developing a potential new data storage paradigm in Hilbert metric coordinates.}
+        \resumeItem{Engineered algorithms for generating complex geometric objects using Lua and C++. Enhanced the Ipe extensible drawing editor with efficient tools for Euclidean, Hilbert, and Funk geometric shapes.}
+        
+      \resumeItemListEnd
+
+
+    \resumeSubHeadingListEnd
+
+
+
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumePublicationEntry
+      {Graph of Skills: Dependency-Aware Structural Retrieval for Massive Agent Skills}
+      {D. Liu*, Z. Li*, \textbf{H. Du}, et al.}
+      {Preprint}
+      {\href{https://arxiv.org/abs/2604.05333}{Paper} $\mid$ \href{https://github.com/davidliuk/graph-of-skills}{GitHub}}
+    \resumePublicationEntry
+      {A Cookbook of 3D Vision: Data, Learning Paradigms, and Application}
+      {\textbf{H. Du}*, Z. Li*, D. Liu*, et al.}
+      {CVPR 2026 Workshop (Poster)}
+      {\href{https://github.com/Hongyang-Du/awesome-3d-datasets}{GitHub}}
+    \resumePublicationEntry
+      {MM-Zero: Self-Evolving Multi-Model Vision Language Models From Zero Data}
+      {Z. Li*, \textbf{H. Du}*, C. Huang*, et al.}
+      {Preprint}
+      {\href{https://arxiv.org/abs/2603.09206}{Paper} $\mid$ \href{https://github.com/zli12321/MM-Zero}{GitHub}}
+    \resumePublicationEntry
+      {VideoGPA: Distilling Geometry Priors for 3D-Consistent Video Generation}
+      {\textbf{H. Du}*, J. Ye*, X. Cong*, et al.}
+      {Preprint}
+      {\href{https://arxiv.org/abs/2601.23286}{Paper} $\mid$ \href{https://hongyang-du.github.io/VideoGPA-Website/}{Web} $\mid$ \href{https://github.com/Hongyang-Du/VideoGPA}{GitHub}}
+    \resumePublicationEntry
+      {How to Design and Train Your Implicit Neural Representation for Video Compression}
+      {M. Gwilliam, R. Zhang, N. Padmanabhan, \textbf{H. Du}, et al.}
+      {WACV 2026}
+      {\href{https://arxiv.org/abs/2506.24127}{Paper} $\mid$ \href{https://mgwillia.github.io/vinrb/}{Web} $\mid$ \href{https://github.com/mgwillia/vinrb}{GitHub}}
+    \resumePublicationEntry
+      {VideoHallu: Evaluating and Mitigating Multi-modal Hallucinations for Synthetic Videos}
+      {Z. Li*, X. Wu*, Y. Qin, \textbf{H. Du}, et al.}
+      {NeurIPS 2025 (Poster)}
+      {\href{https://arxiv.org/abs/2505.01481}{Paper} $\mid$ \href{https://wuxiyang1996.github.io/videohallu_page/}{Web} $\mid$ \href{https://github.com/zli12321/VideoHallu}{GitHub}}
+    \resumePublicationEntry
+      {A Survey of State of the Art Large Vision Language Models: Alignment, Benchmark, Evaluations and Challenges}
+      {Z. Li*, X. Wu*, \textbf{H. Du}, et al.}
+      {CVPR 2025 Workshop (Oral)}
+      {\href{https://openaccess.thecvf.com/content/CVPR2025W/TMM-OpenWorld/html/Li_A_Survey_of_State_of_the_Art_Large_Vision_Language_CVPRW_2025_paper.html}{Paper} $\mid$ \href{https://github.com/zli12321/Awesome-VLM-Papers-And-Models}{GitHub}}
+    \resumePublicationEntry
+      {Ipelets for the Convex Polygonal Geometry}
+      {N. Parepally, A. Chatterjee, A. Gezalyan, \textbf{H. Du}, et al.}
+      {SoCG 2024}
+      {\href{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2024.92}{Paper} $\mid$ \href{https://archive.softwareheritage.org/browse/directory/9bd3fa80632acd54ba70aaa6d413da809ef3d73d/?origin_url=https://github.com/GeneralCoder365/umd_ipelets\&revision=a192a2a0ed086dee45ac6823bcd7892efcbabfe7\&snapshot=4669f223bd0bd8b718bbc43fb7fe8eb5e4014aa6}{Software}}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills \& Award}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Shell, Java, C++, Bash, Go, Rust, SQL, JS/HTML/CSS, OCaml, Lua, Racket, React, Matlab} \\
+
+     \textbf{Dev Stack}{: Spring Boot, Flask, Django, FastAPI, Node.js, RESTful APIs, Redis, MongoDB, Docker, Flutter, Next.js} \\
+
+     \textbf{AI/ML Stack}{: PyTorch, TensorFlow, Transformers, scikit-learn, OpenCV, LangChain, LlamaIndex, Haystack, NumPy} \\
+    \textbf{Focus Areas}{: Self-supervised Learning, Representation Learning, Reinforcement Learning, Contrastive Learning, 2D/3D Vision, Vision-Language Models, Transformers, Diffusion Models}
+    \\
+     \textbf{Awards}{: Robert Ma Scholarship, Break Through Tech Scholarship, Dean’s List (7 semesters), AIME Qualifier (Top 5\%), AMC 12 Top 1\% Honor Roll of Distinction, TN State Math Competition 1st Place}
+    }
+    
+  
+    }
+    
+ \end{itemize}
+ 
+
+
+\end{document}

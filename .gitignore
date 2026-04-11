@@ -8,3 +8,8 @@ vendor/
 Gemfile.lock
 
 .DS_Store
+
+# LaTeX (cv.tex)
+cv.aux
+cv.log
+cv.out
