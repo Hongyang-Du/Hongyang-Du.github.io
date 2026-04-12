@@ -175,18 +175,8 @@
   \resumeSubHeadingListEnd
  
 
-%-----------Project-----------
-\section{Selected Publications}
+\section{Vision Representation}
   \resumeSubHeadingListStart
-  \resumeSubheading 
-      {Self-Evolving Vision Language Models From Zero Data}{March 2025 -- June 2026}{\href{https://arxiv.org/abs/2603.09206}{\textbf{Preprint}}}{}
-      \resumeItemListStart
-          \resumeItem{Proposed a novel training paradigm that eliminates the need for human-annotated data ("zero data") by designing an innovative three-role collaborative pipeline: Proposer, Coder, and Solver}
-          \resumeItem{Empowered the model to autonomously construct visually complex scenes via code generation; implemented Group Relative Policy Optimization (GRPO) with role-specific reward mechanisms for sequential, closed-loop training.}
-          \resumeItem{Drive a comprehensive performance leap across base models (e.g., Qwen3-VL, Mimo-VL) with significant gains in multimodal understanding, mathematical reasoning, and coding capabilities.}
-
-      \resumeItemListEnd
-
   \resumeSubheading 
       {3D Consistent Video Diffusion Model}{June 2025 -- Feb 2026}{\href{https://hongyang-du.github.io/VideoGPA-Website/}{\textbf{Preprint}}}{}
       \resumeItemListStart
@@ -195,17 +185,6 @@
           \resumeItem{Significantly outperformed SOTA baselines in 3D consistency and motion coherence, achieving superior physical plausibility on complex real-world benchmarks with minimal data requirements.}
 
       \resumeItemListEnd
-  \resumeSubheading 
-      {Vision Language Models Understanding and Hallucination}{Jan 2025 -- Aug 2025}{\href{https://wuxiyang1996.github.io/videohallu_page/}{\textbf{NeurIPS 2025 [Poster]}}, 
-      \href{https://openaccess.thecvf.com/content/CVPR2025W/TMM-OpenWorld/html/Li_A_Survey_of_State_of_the_Art_Large_Vision_Language_CVPRW_2025_paper.html}{\textbf{CVPR 2025 Workshop [Oral]}} }{}
-      \resumeItemListStart
-        \resumeItem{Designed VideoHallu dataset for hallucination detection in synthetic video understanding; proposed 2 novel metrics (temporal consistency, semantic mismatch) to quantify alignment between captions and dynamic video scenes.
-        }
-        \resumeItem{Implemented robust hallucination detection framework integrating frame-level caption matching, embedding similarity (CLIP/BLIP), and cross-frame alignment; enhanced via GRPO post-training with curriculum learning on video QA datasets incorporating counterintuitive commonsense and physics reasoning.
-        }
-        \resumeItem{Conducted a systematic survey of cutting-edge vision-language models (e.g., GPT-4V, Gemini, Qwen-VL), detailing their model architectures, instruction alignment mechanisms, and evaluation protocols.}
-      \resumeItemListEnd
-      
   \resumeSubheading 
       {Implicit Neural Representation for Video Compression}{May 2024 -- May 2025}
       {
@@ -232,6 +211,37 @@
 
     \resumeSubHeadingListEnd
 
+
+
+\section{VLM \& Agents}
+  \resumeSubHeadingListStart
+  \resumeSubheading 
+      {Agent Skill Dependency-Aware Structural Retrieval}{Apr 2026}{\href{https://arxiv.org/abs/2604.05333}{\textbf{Preprint}}}{}
+      \resumeItemListStart
+          \resumeItem{Structured massive agent skill libraries as an offline dependency graph and retrieved small, relevant skill bundles at inference (seeding + PageRank under a token budget) instead of loading the full library.}
+          \resumeItem{Reduced context tokens while improving downstream reward for LLM-based agents operating over large skill sets.}
+      \resumeItemListEnd
+
+  \resumeSubheading 
+      {Self-Evolving Vision Language Models From Zero Data}{March 2025 -- June 2026}{\href{https://arxiv.org/abs/2603.09206}{\textbf{Preprint}}}{}
+      \resumeItemListStart
+          \resumeItem{Proposed a novel training paradigm that eliminates the need for human-annotated data ("zero data") by designing an innovative three-role collaborative pipeline: Proposer, Coder, and Solver}
+          \resumeItem{Empowered the model to autonomously construct visually complex scenes via code generation; implemented Group Relative Policy Optimization (GRPO) with role-specific reward mechanisms for sequential, closed-loop training.}
+          \resumeItem{Drive a comprehensive performance leap across base models (e.g., Qwen3-VL, Mimo-VL) with significant gains in multimodal understanding, mathematical reasoning, and coding capabilities.}
+
+      \resumeItemListEnd
+
+  \resumeSubheading 
+      {Vision Language Models Understanding and Hallucination}{Jan 2025 -- Aug 2025}{\href{https://wuxiyang1996.github.io/videohallu_page/}{\textbf{NeurIPS 2025 [Poster]}}, 
+      \href{https://openaccess.thecvf.com/content/CVPR2025W/TMM-OpenWorld/html/Li_A_Survey_of_State_of_the_Art_Large_Vision_Language_CVPRW_2025_paper.html}{\textbf{CVPR 2025 Workshop [Oral]}} }{}
+      \resumeItemListStart
+        \resumeItem{Designed VideoHallu dataset for hallucination detection in synthetic video understanding; proposed 2 novel metrics (temporal consistency, semantic mismatch) to quantify alignment between captions and dynamic video scenes.
+        }
+        \resumeItem{Implemented robust hallucination detection framework integrating frame-level caption matching, embedding similarity (CLIP/BLIP), and cross-frame alignment; enhanced via GRPO post-training with curriculum learning on video QA datasets incorporating counterintuitive commonsense and physics reasoning.
+        }
+        \resumeItem{Conducted a systematic survey of cutting-edge vision-language models (e.g., GPT-4V, Gemini, Qwen-VL), detailing their model architectures, instruction alignment mechanisms, and evaluation protocols.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
 
 \section{Publications}
