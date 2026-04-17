@@ -23,8 +23,30 @@ h1, h2, h3, h4, h5, h6,
     opacity: 0.95;
 }
 
-.navbar-brown {
-    background-color: #4E3629;
+/* Brown bar: #4E3629 (Brown U.) + white text */
+.navbar.navbar-brown {
+    background-color: #4E3629 !important;
+    opacity: 1;
+}
+
+.navbar.navbar-brown .navbar-brand,
+.navbar.navbar-brown .nav-link {
+    color: #fff !important;
+}
+
+.navbar.navbar-brown .nav-link:hover,
+.navbar.navbar-brown .nav-link:focus {
+    color: #fff !important;
+    opacity: 0.9;
+}
+
+.navbar.navbar-brown .navbar-nav .nav-link.active {
+    color: #fff !important;
+}
+
+.navbar.navbar-brown .navbar-toggler {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.65);
 }
 
 .inline-badge {
