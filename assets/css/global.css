@@ -23,6 +23,10 @@ h1, h2, h3, h4, h5, h6,
     opacity: 0.95;
 }
 
+.navbar-brown {
+    background-color: #4E3629;
+}
+
 .inline-badge {
     height: 16px;
     vertical-align: -10%;
