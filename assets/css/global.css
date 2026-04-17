@@ -19,14 +19,12 @@ h1, h2, h3, h4, h5, h6,
     font-weight: 400;
 }
 
-.navbar {
-    opacity: 0.95;
-}
+/* Do not set opacity on .navbar — it makes the whole bar (including bg) semi-transparent. */
 
 /* Brown bar: #4E3629 (Brown U.) + white text */
 .navbar.navbar-brown {
     background-color: #4E3629 !important;
-    opacity: 1;
+    background: #4E3629 !important;
 }
 
 .navbar.navbar-brown .navbar-brand,
@@ -36,8 +34,7 @@ h1, h2, h3, h4, h5, h6,
 
 .navbar.navbar-brown .nav-link:hover,
 .navbar.navbar-brown .nav-link:focus {
-    color: #fff !important;
-    opacity: 0.9;
+    color: rgba(255, 255, 255, 0.85) !important;
 }
 
 .navbar.navbar-brown .navbar-nav .nav-link.active {
