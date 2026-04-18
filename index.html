@@ -28,3 +28,12 @@ navbar_title: Home
         title='<i class="fas fa-star"></i> Selected Publications'
     %}
 {% endif %}
+
+<style>
+  /* Same as global.css — ensures brown links if global.css is cached stale */
+  html body .profile-home-card.card .card-body a { color: #4E3629 !important; }
+  html body .profile-home-card.card .card-body a:hover,
+  html body .profile-home-card.card .card-body a:focus { color: #6B4E3E !important; }
+  html body .profile-home-card.card .card-body a i,
+  html body .profile-home-card.card .card-body a svg { color: inherit !important; fill: currentColor !important; }
+</style>

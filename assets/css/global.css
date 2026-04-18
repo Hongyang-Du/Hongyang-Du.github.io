@@ -19,18 +19,24 @@ h1, h2, h3, h4, h5, h6,
     font-weight: 400;
 }
 
-/* Homepage profile card only (index): links + icons → Brown U. brown, not Bootstrap link blue */
-.profile-home-card a {
+/* Homepage profile card: beat Bootstrap a + FA icon default blue */
+html body .profile-home-card.card .card-body a {
     color: #4E3629 !important;
 }
 
-.profile-home-card a:hover,
-.profile-home-card a:focus {
+html body .profile-home-card.card .card-body a:hover,
+html body .profile-home-card.card .card-body a:focus {
     color: #6B4E3E !important;
 }
 
-.profile-home-card a:visited {
+html body .profile-home-card.card .card-body a:visited {
     color: #5c4032 !important;
+}
+
+html body .profile-home-card.card .card-body a i,
+html body .profile-home-card.card .card-body a svg {
+    color: inherit !important;
+    fill: currentColor !important;
 }
 
 /* Publications: explicit .pub-link on markup — beats Bootstrap a / .text-muted link color */
