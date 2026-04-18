@@ -1,4 +1,14 @@
 @charset "utf-8";
+
+/* Brown U. official bar = --brown-brand; body links use brighter --brown-accent (clear vs black text) */
+:root {
+    --brown-brand: #4E3629;
+    --brown-accent: #C4703E;
+    --brown-accent-hover: #A85D30;
+    --brown-accent-visited: #8F5235;
+    --brown-accent-soft: rgba(196, 112, 62, 0.15);
+}
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -19,18 +29,24 @@ h1, h2, h3, h4, h5, h6,
     font-weight: 400;
 }
 
+/* <code> in bio: same accent family, not default pink */
+html body .profile-home-card.card .card-body .text-profile-bio code {
+    color: var(--brown-accent) !important;
+    background-color: var(--brown-accent-soft);
+}
+
 /* Homepage profile card: beat Bootstrap a + FA icon default blue */
 html body .profile-home-card.card .card-body a {
-    color: #4E3629 !important;
+    color: var(--brown-accent) !important;
 }
 
 html body .profile-home-card.card .card-body a:hover,
 html body .profile-home-card.card .card-body a:focus {
-    color: #6B4E3E !important;
+    color: var(--brown-accent-hover) !important;
 }
 
 html body .profile-home-card.card .card-body a:visited {
-    color: #5c4032 !important;
+    color: var(--brown-accent-visited) !important;
 }
 
 html body .profile-home-card.card .card-body a i,
@@ -41,24 +57,24 @@ html body .profile-home-card.card .card-body a svg {
 
 /* Publications: explicit .pub-link on markup — beats Bootstrap a / .text-muted link color */
 html body .pub-section-card a.pub-link {
-    color: #4E3629 !important;
+    color: var(--brown-accent) !important;
 }
 
 html body .pub-section-card a.pub-link:hover,
 html body .pub-section-card a.pub-link:focus {
-    color: #6B4E3E !important;
+    color: var(--brown-accent-hover) !important;
 }
 
 html body .pub-section-card a.pub-link:visited {
-    color: #5c4032 !important;
+    color: var(--brown-accent-visited) !important;
 }
 
 /* Do not set opacity on .navbar — it makes the whole bar (including bg) semi-transparent. */
 
-/* Brown bar: #4E3629 (Brown U.) + white text */
+/* Brown bar: official brand + white text */
 .navbar.navbar-brown {
-    background-color: #4E3629 !important;
-    background: #4E3629 !important;
+    background-color: var(--brown-brand) !important;
+    background: var(--brown-brand) !important;
 }
 
 .navbar.navbar-brown .navbar-brand,
@@ -80,18 +96,18 @@ html body .pub-section-card a.pub-link:visited {
     border-color: rgba(255, 255, 255, 0.65);
 }
 
-/* Publications: year sidebar (scrollspy). High specificity + !important beats Bootstrap .nav-pills / .nav-link (#007bff). */
+/* Publications: year sidebar (scrollspy). Inactive = accent; active pill = official brand. */
 html body #navbar-year.pub-year-nav.nav-pills a.nav-link {
-    color: #4E3629 !important;
+    color: var(--brown-accent) !important;
 }
 
 html body #navbar-year.pub-year-nav.nav-pills a.nav-link:hover {
-    color: #4E3629 !important;
-    background-color: rgba(78, 54, 41, 0.08) !important;
+    color: var(--brown-accent-hover) !important;
+    background-color: var(--brown-accent-soft) !important;
 }
 
 html body #navbar-year.pub-year-nav.nav-pills a.nav-link.active {
-    background-color: #4E3629 !important;
+    background-color: var(--brown-brand) !important;
     color: #fff !important;
 }
 
