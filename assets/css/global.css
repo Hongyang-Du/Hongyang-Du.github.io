@@ -46,17 +46,17 @@ h1, h2, h3, h4, h5, h6,
     border-color: rgba(255, 255, 255, 0.65);
 }
 
-/* Publications page: year sidebar scrollspy — brown active pill (not Bootstrap primary blue) */
-#navbar-year.nav-pills .nav-link {
-    color: #4E3629;
+/* Publications: year sidebar (scrollspy). High specificity + !important beats Bootstrap .nav-pills / .nav-link (#007bff). */
+html body #navbar-year.pub-year-nav.nav-pills a.nav-link {
+    color: #4E3629 !important;
 }
 
-#navbar-year.nav-pills .nav-link:hover {
-    color: #4E3629;
-    background-color: rgba(78, 54, 41, 0.08);
+html body #navbar-year.pub-year-nav.nav-pills a.nav-link:hover {
+    color: #4E3629 !important;
+    background-color: rgba(78, 54, 41, 0.08) !important;
 }
 
-#navbar-year.nav-pills .nav-link.active {
+html body #navbar-year.pub-year-nav.nav-pills a.nav-link.active {
     background-color: #4E3629 !important;
     color: #fff !important;
 }
