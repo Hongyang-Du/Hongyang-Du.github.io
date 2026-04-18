@@ -44,9 +44,23 @@ h1, h2, h3, h4, h5, h6,
     border-color: rgba(255, 255, 255, 0.65);
 }
 
-/* Publications: year sidebar — only active pill is Brown U. brown; other years = default link blue */
+/* Publications: year sidebar — Brown U. brown; active = filled pill, others = brown text (not default link blue) */
+html body #navbar-year.pub-year-nav.nav-pills a.nav-link {
+    color: #4E3629 !important;
+}
+
+html body #navbar-year.pub-year-nav.nav-pills a.nav-link:hover,
+html body #navbar-year.pub-year-nav.nav-pills a.nav-link:focus {
+    color: #3a281f !important;
+}
+
 html body #navbar-year.pub-year-nav.nav-pills a.nav-link.active {
     background-color: #4E3629 !important;
+    color: #fff !important;
+}
+
+html body #navbar-year.pub-year-nav.nav-pills a.nav-link.active:hover,
+html body #navbar-year.pub-year-nav.nav-pills a.nav-link.active:focus {
     color: #fff !important;
 }
 
