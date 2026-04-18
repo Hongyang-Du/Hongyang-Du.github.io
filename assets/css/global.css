@@ -33,17 +33,17 @@ h1, h2, h3, h4, h5, h6,
     color: #5c4032 !important;
 }
 
-/* Publications lists (homepage Selected + /publications): Paper/Code links, “view all” — brown; not author names (.text-body) */
-.pub-section-card a:not(.text-body) {
+/* Publications: explicit .pub-link on markup — beats Bootstrap a / .text-muted link color */
+html body .pub-section-card a.pub-link {
     color: #4E3629 !important;
 }
 
-.pub-section-card a:not(.text-body):hover,
-.pub-section-card a:not(.text-body):focus {
+html body .pub-section-card a.pub-link:hover,
+html body .pub-section-card a.pub-link:focus {
     color: #6B4E3E !important;
 }
 
-.pub-section-card a:not(.text-body):visited {
+html body .pub-section-card a.pub-link:visited {
     color: #5c4032 !important;
 }
 
