@@ -19,6 +19,34 @@ h1, h2, h3, h4, h5, h6,
     font-weight: 400;
 }
 
+/* Homepage profile card only (index): links + icons → Brown U. brown, not Bootstrap link blue */
+.profile-home-card a {
+    color: #4E3629 !important;
+}
+
+.profile-home-card a:hover,
+.profile-home-card a:focus {
+    color: #6B4E3E !important;
+}
+
+.profile-home-card a:visited {
+    color: #5c4032 !important;
+}
+
+/* Publications lists (homepage Selected + /publications): Paper/Code links, “view all” — brown; not author names (.text-body) */
+.pub-section-card a:not(.text-body) {
+    color: #4E3629 !important;
+}
+
+.pub-section-card a:not(.text-body):hover,
+.pub-section-card a:not(.text-body):focus {
+    color: #6B4E3E !important;
+}
+
+.pub-section-card a:not(.text-body):visited {
+    color: #5c4032 !important;
+}
+
 /* Do not set opacity on .navbar — it makes the whole bar (including bg) semi-transparent. */
 
 /* Brown bar: #4E3629 (Brown U.) + white text */
