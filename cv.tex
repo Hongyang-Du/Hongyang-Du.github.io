@@ -112,6 +112,11 @@
   \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumePublicationGroup}[1]{%
+  \vspace{1pt}\item
+  \textbf{\small #1}\vspace{-4pt}
+}
+
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.1in, label={}]}
@@ -175,7 +180,7 @@
   \resumeSubHeadingListEnd
  
 
-\section{Vision Representation}
+\section{Vision \& Geometric Representation}
   \resumeSubHeadingListStart
   \resumeSubheading 
       {3D Consistent Video Diffusion Model}{June 2025 -- Feb 2026}{\href{https://hongyang-du.github.io/VideoGPA-Website/}{\textbf{ICML 2026}}}{}
@@ -213,7 +218,7 @@
 
 
 
-\section{VLM \& Agents}
+\section{VLMs \& Agents}
   \resumeSubHeadingListStart
   \resumeSubheading 
       {Agent Skill Dependency-Aware Structural Retrieval}{Apr 2026}{\href{https://arxiv.org/abs/2604.05333}{\textbf{Preprint}}}{}
@@ -232,7 +237,7 @@
       \resumeItemListEnd
 
   \resumeSubheading 
-      {Vision Language Models Understanding and Hallucination}{Jan 2025 -- Aug 2025}{\href{https://wuxiyang1996.github.io/videohallu_page/}{\textbf{NeurIPS 2025 [Poster]}}, 
+      {Vision Language Models Understanding and Hallucination}{Jan 2025 -- Aug 2025}{\href{https://wuxiyang1996.github.io/videohallu_page/}{\textbf{NeurIPS 2025}}, 
       \href{https://openaccess.thecvf.com/content/CVPR2025W/TMM-OpenWorld/html/Li_A_Survey_of_State_of_the_Art_Large_Vision_Language_CVPRW_2025_paper.html}{\textbf{CVPR 2025 Workshop [Oral]}} }{}
       \resumeItemListStart
         \resumeItem{Designed VideoHallu dataset for hallucination detection in synthetic video understanding; proposed 2 novel metrics (temporal consistency, semantic mismatch) to quantify alignment between captions and dynamic video scenes.
@@ -246,21 +251,7 @@
 
 \section{Publications}
   \resumeSubHeadingListStart
-    \resumePublicationEntry
-      {Graph of Skills: Dependency-Aware Structural Retrieval for Massive Agent Skills}
-      {D. Liu*, Z. Li*, \textbf{H. Du}, et al.}
-      {Preprint}
-      {\href{https://arxiv.org/abs/2604.05333}{Paper} $\mid$ \href{https://github.com/davidliuk/graph-of-skills}{GitHub}}
-    \resumePublicationEntry
-      {A Cookbook of 3D Vision: Data, Learning Paradigms, and Application}
-      {\textbf{H. Du}*, Z. Li*, D. Liu*, et al.}
-      {CVPR 2026 Workshop}
-      {\href{https://github.com/Hongyang-Du/awesome-3d-datasets}{GitHub}}
-    \resumePublicationEntry
-      {MM-Zero: Self-Evolving Multi-Model Vision Language Models From Zero Data}
-      {Z. Li*, \textbf{H. Du}*, C. Huang*, et al.}
-      {Preprint}
-      {\href{https://arxiv.org/abs/2603.09206}{Paper} $\mid$ \href{https://github.com/zli12321/MM-Zero}{GitHub}}
+    \resumePublicationGroup{Vision \& Geometric Representation}
     \resumePublicationEntry
       {VideoGPA: Distilling Geometry Priors for 3D-Consistent Video Generation}
       {\textbf{H. Du}*, J. Ye*, X. Cong*, et al.}
@@ -272,6 +263,27 @@
       {WACV 2026}
       {\href{https://arxiv.org/abs/2506.24127}{Paper} $\mid$ \href{https://mgwillia.github.io/vinrb/}{Web} $\mid$ \href{https://github.com/mgwillia/vinrb}{GitHub}}
     \resumePublicationEntry
+      {Ipelets for the Convex Polygonal Geometry}
+      {N. Parepally, A. Chatterjee, A. Gezalyan, \textbf{H. Du}, et al.}
+      {SoCG 2024}
+      {\href{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2024.92}{Paper} $\mid$ \href{https://archive.softwareheritage.org/browse/directory/9bd3fa80632acd54ba70aaa6d413da809ef3d73d/?origin_url=https://github.com/GeneralCoder365/umd_ipelets\&revision=a192a2a0ed086dee45ac6823bcd7892efcbabfe7\&snapshot=4669f223bd0bd8b718bbc43fb7fe8eb5e4014aa6}{Software}}
+    \resumePublicationEntry
+      {A Cookbook of 3D Vision: Data, Learning Paradigms, and Application}
+      {\textbf{H. Du}*, Z. Li*, D. Liu*, et al.}
+      {CVPR 2026 Workshop}
+      {\href{https://github.com/Hongyang-Du/awesome-3d-datasets}{GitHub}}
+    \resumePublicationGroup{VLMs \& Agents}
+    \resumePublicationEntry
+      {Graph of Skills: Dependency-Aware Structural Retrieval for Massive Agent Skills}
+      {D. Liu*, Z. Li*, \textbf{H. Du}, et al.}
+      {Preprint}
+      {\href{https://arxiv.org/abs/2604.05333}{Paper} $\mid$ \href{https://github.com/davidliuk/graph-of-skills}{GitHub}}
+    \resumePublicationEntry
+      {MM-Zero: Self-Evolving Multi-Model Vision Language Models From Zero Data}
+      {Z. Li*, \textbf{H. Du}*, C. Huang*, et al.}
+      {Preprint}
+      {\href{https://arxiv.org/abs/2603.09206}{Paper} $\mid$ \href{https://github.com/zli12321/MM-Zero}{GitHub}}
+    \resumePublicationEntry
       {VideoHallu: Evaluating and Mitigating Multi-modal Hallucinations for Synthetic Videos}
       {Z. Li*, X. Wu*, Y. Qin, \textbf{H. Du}, et al.}
       {NeurIPS 2025}
@@ -281,11 +293,6 @@
       {Z. Li*, X. Wu*, \textbf{H. Du}, et al.}
       {CVPR 2025 Workshop (Oral)}
       {\href{https://openaccess.thecvf.com/content/CVPR2025W/TMM-OpenWorld/html/Li_A_Survey_of_State_of_the_Art_Large_Vision_Language_CVPRW_2025_paper.html}{Paper} $\mid$ \href{https://github.com/zli12321/Awesome-VLM-Papers-And-Models}{GitHub}}
-    \resumePublicationEntry
-      {Ipelets for the Convex Polygonal Geometry}
-      {N. Parepally, A. Chatterjee, A. Gezalyan, \textbf{H. Du}, et al.}
-      {SoCG 2024}
-      {\href{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2024.92}{Paper} $\mid$ \href{https://archive.softwareheritage.org/browse/directory/9bd3fa80632acd54ba70aaa6d413da809ef3d73d/?origin_url=https://github.com/GeneralCoder365/umd_ipelets\&revision=a192a2a0ed086dee45ac6823bcd7892efcbabfe7\&snapshot=4669f223bd0bd8b718bbc43fb7fe8eb5e4014aa6}{Software}}
   \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------

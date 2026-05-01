@@ -80,6 +80,11 @@ html body #navbar-year.pub-year-nav.nav-pills a.nav-link.active:focus {
     max-height: 120px;
 }
 
+.publication-group-title {
+    background-color: #f8f5f2;
+    color: #4E3629;
+}
+
 .abstract-body {
     min-height: 100px;
 }
