@@ -134,6 +134,14 @@ div.lazy {
     color: #fff;
 }
 
+.publication-highlight {
+    color: #856404;
+    background-color: #fff3cd;
+    border-left: 3px solid #ffc107;
+    padding: 4px 8px;
+    border-radius: 2px;
+}
+
 .email-text {
     font-family: Courier, monospace;
 }
