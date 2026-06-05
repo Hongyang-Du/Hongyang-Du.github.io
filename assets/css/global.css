@@ -134,12 +134,11 @@ div.lazy {
     color: #fff;
 }
 
-.publication-highlight {
-    color: #856404;
-    background-color: #fff3cd;
-    border-left: 3px solid #ffc107;
-    padding: 4px 8px;
-    border-radius: 2px;
+.text-marker {
+    background: linear-gradient(transparent 35%, #fff176 35%, #fff176 90%, transparent 90%);
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    padding: 0 1px;
 }
 
 .email-text {
