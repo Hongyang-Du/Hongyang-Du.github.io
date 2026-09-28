@@ -134,6 +134,11 @@ div.lazy {
     color: #fff;
 }
 
+.badge-publication-blue {
+    background-color: #4a8fe0;
+    color: #fff;
+}
+
 .text-marker {
     background: linear-gradient(transparent 35%, #fff176 35%, #fff176 90%, transparent 90%);
     box-decoration-break: clone;
