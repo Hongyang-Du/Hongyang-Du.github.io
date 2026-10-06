@@ -162,3 +162,8 @@ video.w-100 {
 
   }
   
+.author-note {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    padding: 0 0.2em;
+}
