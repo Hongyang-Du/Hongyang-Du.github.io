@@ -36,6 +36,17 @@ plugins:
 # timezone: Asia/Shanghai
 
 collections:
-  - publications
-  - news
-  - showcase
+  publications:
+  news:
+  showcase:
+  blog:
+    output: true
+    permalink: /blog/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: blog
+    values:
+      layout: blog_post
+      navbar_title: Blog

@@ -1,0 +1,23 @@
+{% assign item = include.item %}
+{%- if item.external_url -%}
+    {%- assign post_url = item.external_url -%}
+{%- else -%}
+    {%- assign post_url = item.url | relative_url -%}
+{%- endif -%}
+<div class="blog-item row no-gutters position-relative mb-3 bg-white shadow-sm rounded-sm">
+    {% if item.cover %}
+    <div class="col-12 col-sm-4 p-3">
+        <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="blog-item-cover lazy w-100 rounded-sm border" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
+    </div>
+    {% endif %}
+    <div class="col p-3 {% if item.cover %}pt-0 pt-sm-3 pl-sm-1{% endif %}">
+        <h5 class="mt-0 mb-1">
+            <a class="blog-item-title stretched-link" href="{{ post_url }}" {% if item.external_url %}target="_blank" rel="noopener"{% endif %}>{{ item.title }}</a>
+        </h5>
+        <p class="mt-0 mb-2 small text-muted">
+            {{ item.date | date: "%b %-d, %Y" }}
+            {% if item.external_url %}&nbsp;·&nbsp; <i class="fas fa-arrow-up-right-from-square"></i> Project page{% endif %}
+        </p>
+        <p class="mt-0 mb-0 text-muted">{{ item.description }}</p>
+    </div>
+</div>

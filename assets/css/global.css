@@ -167,3 +167,61 @@ video.w-100 {
     color: #495057;
     padding: 0 0.2em;
 }
+
+/* Blog */
+.blog-container {
+    max-width: 820px;
+}
+
+.blog-item-cover {
+    aspect-ratio: 5 / 3;
+    object-fit: contain;
+    background-color: #fff;
+}
+
+.blog-item-title {
+    color: #212529;
+}
+
+.blog-item:hover .blog-item-title,
+.blog-item-title:focus {
+    color: #4E3629;
+    text-decoration: underline;
+}
+
+.blog-post h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.blog-post pre {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+}
+
+.blog-post table {
+    font-size: 0.95rem;
+}
+
+/* Figures sit centered and narrower than the text column */
+.blog-post img {
+    display: block;
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto 1.25rem;
+}
+
+.blog-post img.blog-img-sm {
+    width: 280px;
+}
+
+@media (max-width: 575.98px) {
+    .blog-post img {
+        width: 100%;
+    }
+}

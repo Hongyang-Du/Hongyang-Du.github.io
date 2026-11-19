@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% if page.scripts %}<link rel="stylesheet" href="{{ '/assets/css/blog-viz.css' | relative_url }}">{% endif %}
+<div class="blog-container mx-auto">
+    <article class="blog-post my-4 p-4 bg-white shadow-sm rounded-sm">
+        <p class="small mb-3"><a href="{{ '/blog/' | relative_url }}"><i class="fas fa-arrow-left"></i> Blog</a></p>
+        <h1 class="h2 mb-1">{{ page.title }}</h1>
+        <p class="small text-muted mb-4">{{ page.date | date: "%b %-d, %Y" }}</p>
+        {% if page.external_url %}
+        <p>This post lives on its project page: <a href="{{ page.external_url }}">{{ page.external_url }}</a></p>
+        <script>window.location.replace({{ page.external_url | jsonify }});</script>
+        {% else %}
+        {{ content }}
+        {% endif %}
+    </article>
+</div>
+{% for script in page.scripts %}
+<script defer src="{{ script | relative_url }}"></script>
+{% endfor %}
